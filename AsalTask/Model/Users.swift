@@ -29,8 +29,8 @@ struct Address: Codable {
 }
 
 struct GeoLocation: Codable {
-    let lat: Double
-    let lng: Double
+    let lat: String
+    let lng: String
 
 }
 

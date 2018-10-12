@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		001BCB729DDF2B9E53AA85DE /* Pods_AsalTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBE07E86A3B70C2BB94AF0C /* Pods_AsalTask.framework */; };
 		D453AB8F216E9162009C9C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453AB8E216E9162009C9C7E /* AppDelegate.swift */; };
-		D453AB91216E9162009C9C7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453AB90216E9162009C9C7E /* ViewController.swift */; };
 		D453AB94216E9162009C9C7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D453AB92216E9162009C9C7E /* Main.storyboard */; };
 		D453AB96216E9164009C9C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D453AB95216E9164009C9C7E /* Assets.xcassets */; };
 		D453AB99216E9164009C9C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D453AB97216E9164009C9C7E /* LaunchScreen.storyboard */; };
 		D453ABA221710963009C9C7E /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453ABA121710963009C9C7E /* Users.swift */; };
 		D453ABA42171097F009C9C7E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453ABA32171097F009C9C7E /* Photo.swift */; };
+		D453ABAA217111DF009C9C7E /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453ABA9217111DF009C9C7E /* UsersViewController.swift */; };
+		D453ABAC217111E8009C9C7E /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453ABAB217111E8009C9C7E /* PhotosViewController.swift */; };
+		D453ABAF2171197D009C9C7E /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453ABAE2171197D009C9C7E /* APIs.swift */; };
+		D453ABB321712CA1009C9C7E /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453ABB221712CA1009C9C7E /* UserDetailsViewController.swift */; };
+		D453ABB521712CB8009C9C7E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453ABB421712CB8009C9C7E /* PhotoCollectionViewCell.swift */; };
+		D453ABB7217140ED009C9C7E /* SectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453ABB6217140ED009C9C7E /* SectionHeaderCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +28,18 @@
 		62FF9FD41B34FB4337199F39 /* Pods-AsalTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsalTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-AsalTask/Pods-AsalTask.release.xcconfig"; sourceTree = "<group>"; };
 		D453AB8B216E9162009C9C7E /* AsalTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsalTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D453AB8E216E9162009C9C7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D453AB90216E9162009C9C7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D453AB93216E9162009C9C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D453AB95216E9164009C9C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D453AB98216E9164009C9C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D453AB9A216E9164009C9C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D453ABA121710963009C9C7E /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		D453ABA32171097F009C9C7E /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		D453ABA9217111DF009C9C7E /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		D453ABAB217111E8009C9C7E /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		D453ABAE2171197D009C9C7E /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		D453ABB221712CA1009C9C7E /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		D453ABB421712CB8009C9C7E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D453ABB6217140ED009C9C7E /* SectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +92,11 @@
 		D453AB8D216E9162009C9C7E /* AsalTask */ = {
 			isa = PBXGroup;
 			children = (
+				D453ABAD217112A2009C9C7E /* Utilites */,
+				D453ABA5217110AF009C9C7E /* ViewControllers */,
 				D453ABA02170FE21009C9C7E /* Model */,
-				D453AB8E216E9162009C9C7E /* AppDelegate.swift */,
-				D453AB90216E9162009C9C7E /* ViewController.swift */,
 				D453AB92216E9162009C9C7E /* Main.storyboard */,
-				D453AB95216E9164009C9C7E /* Assets.xcassets */,
-				D453AB97216E9164009C9C7E /* LaunchScreen.storyboard */,
-				D453AB9A216E9164009C9C7E /* Info.plist */,
+				D453ABA6217110DA009C9C7E /* App */,
 			);
 			path = AsalTask;
 			sourceTree = "<group>";
@@ -100,6 +108,53 @@
 				D453ABA32171097F009C9C7E /* Photo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D453ABA5217110AF009C9C7E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D453ABB021712C7A009C9C7E /* Users */,
+				D453ABB121712C89009C9C7E /* Photos */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D453ABA6217110DA009C9C7E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D453AB8E216E9162009C9C7E /* AppDelegate.swift */,
+				D453AB95216E9164009C9C7E /* Assets.xcassets */,
+				D453AB97216E9164009C9C7E /* LaunchScreen.storyboard */,
+				D453AB9A216E9164009C9C7E /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D453ABAD217112A2009C9C7E /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				D453ABAE2171197D009C9C7E /* APIs.swift */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		D453ABB021712C7A009C9C7E /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				D453ABA9217111DF009C9C7E /* UsersViewController.swift */,
+				D453ABB221712CA1009C9C7E /* UserDetailsViewController.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		D453ABB121712C89009C9C7E /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				D453ABAB217111E8009C9C7E /* PhotosViewController.swift */,
+				D453ABB421712CB8009C9C7E /* PhotoCollectionViewCell.swift */,
+				D453ABB6217140ED009C9C7E /* SectionHeaderCollectionReusableView.swift */,
+			);
+			path = Photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,10 +235,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AsalTask/Pods-AsalTask-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -231,9 +288,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D453ABA42171097F009C9C7E /* Photo.swift in Sources */,
-				D453AB91216E9162009C9C7E /* ViewController.swift in Sources */,
+				D453ABB521712CB8009C9C7E /* PhotoCollectionViewCell.swift in Sources */,
+				D453ABAA217111DF009C9C7E /* UsersViewController.swift in Sources */,
+				D453ABB7217140ED009C9C7E /* SectionHeaderCollectionReusableView.swift in Sources */,
 				D453ABA221710963009C9C7E /* Users.swift in Sources */,
 				D453AB8F216E9162009C9C7E /* AppDelegate.swift in Sources */,
+				D453ABB321712CA1009C9C7E /* UserDetailsViewController.swift in Sources */,
+				D453ABAF2171197D009C9C7E /* APIs.swift in Sources */,
+				D453ABAC217111E8009C9C7E /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TJFLD5CWYK;
-				INFOPLIST_FILE = AsalTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AsalTask/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -402,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TJFLD5CWYK;
-				INFOPLIST_FILE = AsalTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AsalTask/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
