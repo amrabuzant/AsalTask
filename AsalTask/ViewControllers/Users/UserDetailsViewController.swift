@@ -35,6 +35,8 @@ class UserDetailsViewController: UIViewController {
     }
     
     func LoadInfo(_ user: User) {
+        self.title = user.name
+        
         idLabel.text = "\(user.id)"
         nameLabel.text = user.name
         userNameLabel.text = user.username
@@ -52,7 +54,5 @@ class UserDetailsViewController: UIViewController {
         geoMapView.setCenter(userLocation, animated: true)
         
     }
-    
-
 
 }

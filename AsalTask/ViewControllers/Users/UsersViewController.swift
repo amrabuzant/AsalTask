@@ -67,9 +67,9 @@ extension UsersViewController: UITableViewDataSource{
         
         cell.textLabel?.text = user.name
         cell.detailTextLabel?.text = user.email
+        cell.selectionStyle = .none
         
         return cell
     }
-    
     
 }
