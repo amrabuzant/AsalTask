@@ -20,6 +20,7 @@
 		D453ABB321712CA1009C9C7E /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453ABB221712CA1009C9C7E /* UserDetailsViewController.swift */; };
 		D453ABB521712CB8009C9C7E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453ABB421712CB8009C9C7E /* PhotoCollectionViewCell.swift */; };
 		D453ABB7217140ED009C9C7E /* SectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453ABB6217140ED009C9C7E /* SectionHeaderCollectionReusableView.swift */; };
+		D4900CDB2171CB6F00543280 /* FullPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4900CDA2171CB6F00543280 /* FullPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D453ABB221712CA1009C9C7E /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		D453ABB421712CB8009C9C7E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		D453ABB6217140ED009C9C7E /* SectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		D4900CDA2171CB6F00543280 /* FullPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				D453ABAB217111E8009C9C7E /* PhotosViewController.swift */,
 				D453ABB421712CB8009C9C7E /* PhotoCollectionViewCell.swift */,
 				D453ABB6217140ED009C9C7E /* SectionHeaderCollectionReusableView.swift */,
+				D4900CDA2171CB6F00543280 /* FullPhotoViewController.swift */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			files = (
 				D453ABA42171097F009C9C7E /* Photo.swift in Sources */,
 				D453ABB521712CB8009C9C7E /* PhotoCollectionViewCell.swift in Sources */,
+				D4900CDB2171CB6F00543280 /* FullPhotoViewController.swift in Sources */,
 				D453ABAA217111DF009C9C7E /* UsersViewController.swift in Sources */,
 				D453ABB7217140ED009C9C7E /* SectionHeaderCollectionReusableView.swift in Sources */,
 				D453ABA221710963009C9C7E /* Users.swift in Sources */,

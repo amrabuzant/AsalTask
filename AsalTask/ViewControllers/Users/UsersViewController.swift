@@ -22,6 +22,9 @@ class UsersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.title = "Users"
+        
         loadUsers()
         tableView.tableFooterView = UIView(frame: .zero)
     }
@@ -36,15 +39,18 @@ class UsersViewController: UIViewController {
         }
     }
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let destinationVC = segue.destination as? UserDetailsViewController{
+            if let cell = sender as? UITableViewCell{
+                destinationVC.userInfo = dataSource.first(where: { (item) -> Bool in
+                    item.name == cell.textLabel?.text
+                })
+            }
+        }
     }
-    */
+
 
 }
 
