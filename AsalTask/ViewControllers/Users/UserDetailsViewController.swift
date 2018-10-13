@@ -49,9 +49,12 @@ class UserDetailsViewController: UIViewController {
         comCatchPheaseLabel.text = user.company.catchPhrase
         comBSLabel.text = user.company.bs
         
+        let annotation = MKPointAnnotation()
         let userLocation = CLLocationCoordinate2D(latitude: Double(user.address.geo.lat)!, longitude: Double(user.address.geo.lng)!)
-        
-        geoMapView.setCenter(userLocation, animated: true)
+        annotation.coordinate = userLocation
+        annotation.title = "\(user.username) Location"
+        geoMapView.addAnnotation(annotation)
+        geoMapView.setCenter(userLocation, animated: false)
         
     }
 
