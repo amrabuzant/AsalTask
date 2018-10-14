@@ -20,9 +20,9 @@ class APINames {
 }
 
 
-class APIMethods {
+@objc class APIMethods : NSObject {
     
-    static func getUsers(completion: @escaping (_ data: [User]?, _ error: String?) -> Void) {
+    @objc static func getUsers(completion: @escaping (_ data: [User]?, _ error: String?) -> Void) {
         Alamofire.request(APINames.Users).validate().responseJSON { response in
             switch response.result {
             case .success:

@@ -143,7 +143,7 @@
         <!--Users-->
         <scene sceneID="TLb-gW-EtJ">
             <objects>
-                <viewController title="Users" id="OPg-lm-fYz" customClass="UsersViewController" customModule="AsalTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Users" id="OPg-lm-fYz" customClass="UsersViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AYg-A4-dRZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,8 +182,8 @@
                                 </prototypes>
                                 <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="OPg-lm-fYz" id="4ag-iU-jH2"/>
-                                    <outlet property="delegate" destination="OPg-lm-fYz" id="uTL-Te-iYB"/>
+                                    <outlet property="dataSource" destination="OPg-lm-fYz" id="5Uf-5t-tg6"/>
+                                    <outlet property="delegate" destination="OPg-lm-fYz" id="kmf-ST-Qq6"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -198,7 +198,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Users" id="h5p-Q4-Zx6"/>
                     <connections>
-                        <outlet property="tableView" destination="579-Le-win" id="VRc-D5-wQM"/>
+                        <outlet property="tableView" destination="579-Le-win" id="tfa-gB-3mN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghF-LO-e6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -226,7 +226,7 @@
         <!--User Details View Controller-->
         <scene sceneID="lge-wd-NOb">
             <objects>
-                <viewController id="h6D-cW-KS4" customClass="UserDetailsViewController" customModule="AsalTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h6D-cW-KS4" customClass="UserDetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LMM-GD-iju">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -508,18 +508,18 @@
                     </view>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
-                        <outlet property="addressLabel" destination="Jxe-zx-bjQ" id="s3L-SM-9E8"/>
-                        <outlet property="comBSLabel" destination="m6S-DQ-B5A" id="DF8-21-fME"/>
-                        <outlet property="comCatchPheaseLabel" destination="dJF-5n-ros" id="Xmj-ee-ZFf"/>
-                        <outlet property="comNameLabel" destination="7lI-CM-aVc" id="A46-hm-CKJ"/>
-                        <outlet property="emailLabel" destination="n4b-YS-I5h" id="GCS-W5-WnM"/>
-                        <outlet property="geoMapView" destination="1ZW-Ju-Fct" id="idY-CF-A9U"/>
-                        <outlet property="idLabel" destination="T08-3N-FVb" id="CLO-02-UUY"/>
-                        <outlet property="nameLabel" destination="L0b-sc-rrd" id="4Ja-aK-vpk"/>
-                        <outlet property="phoneLabel" destination="G6o-8b-TD3" id="rqI-ee-hGr"/>
-                        <outlet property="userNameLabel" destination="8mY-n0-0To" id="YYN-xw-wqx"/>
-                        <outlet property="websiteLabel" destination="vwJ-xI-xH3" id="1ZY-VJ-Hek"/>
-                        <outlet property="zipCodeLabel" destination="AQr-QV-Bdx" id="mZq-zE-edk"/>
+                        <outlet property="addressLabel" destination="Jxe-zx-bjQ" id="H1I-L6-1Vg"/>
+                        <outlet property="comBSLabel" destination="m6S-DQ-B5A" id="COs-71-qv7"/>
+                        <outlet property="comCatchPheaseLabel" destination="dJF-5n-ros" id="un0-VZ-537"/>
+                        <outlet property="comNameLabel" destination="7lI-CM-aVc" id="mvj-5s-YrP"/>
+                        <outlet property="emailLabel" destination="n4b-YS-I5h" id="CHo-Jk-DJp"/>
+                        <outlet property="geoMapView" destination="1ZW-Ju-Fct" id="qe5-h6-3PZ"/>
+                        <outlet property="idLabel" destination="T08-3N-FVb" id="tM9-t7-4xv"/>
+                        <outlet property="nameLabel" destination="L0b-sc-rrd" id="evK-qY-RIN"/>
+                        <outlet property="phoneLabel" destination="G6o-8b-TD3" id="cVh-N8-bl7"/>
+                        <outlet property="userNameLabel" destination="8mY-n0-0To" id="sYK-K2-Hln"/>
+                        <outlet property="websiteLabel" destination="vwJ-xI-xH3" id="dRu-t2-fIe"/>
+                        <outlet property="zipCodeLabel" destination="AQr-QV-Bdx" id="09i-47-nLD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ubI-KX-keM" userLabel="First Responder" sceneMemberID="firstResponder"/>
