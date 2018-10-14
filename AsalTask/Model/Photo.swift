@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct Photo: Codable {
-    let albumId: Int
-    let id: Int
-    let title: String
-    let url: String
-    let thumbnailUrl: String
+@objc class Photo: NSObject, Codable {
+    @objc let albumId: Int
+    @objc let id: Int
+    @objc let title: String
+    @objc let url: String
+    @objc let thumbnailUrl: String
 }

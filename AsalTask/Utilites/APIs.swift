@@ -30,7 +30,7 @@ class APINames {
                     let jsonDecoder = JSONDecoder()
                     let responseModel = try jsonDecoder.decode([User].self, from: response.data!)
 
-                    completion(responseModel,nil)
+                    completion(responseModel,"0")
                     
                 } catch let error as NSError {
                     completion(nil, error.description)
@@ -41,7 +41,7 @@ class APINames {
         }
     }
     
-    static func getPhotos(completion: @escaping (_ data: [Photo]?, _ error: String?) -> Void) {
+    @objc static func getPhotos(completion: @escaping (_ data: [Photo]?, _ error: String?) -> Void) {
         Alamofire.request(APINames.Photos).validate().responseJSON { response in
             switch response.result {
             case .success:
@@ -49,7 +49,7 @@ class APINames {
                     let jsonDecoder = JSONDecoder()
                     let responseModel = try jsonDecoder.decode([Photo].self, from: response.data!)
                    
-                    completion(responseModel,nil)
+                    completion(responseModel,"0")
                     
                 } catch let error as NSError {
                     completion(nil, error.description)

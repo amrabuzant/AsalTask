@@ -13,7 +13,7 @@
         <!--Photos-->
         <scene sceneID="Dld-QN-YUO">
             <objects>
-                <viewController title="Photos" id="SYw-yl-CDs" customClass="PhotosViewController" customModule="AsalTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Photos" id="SYw-yl-CDs" customClass="PhotosViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsO-lo-XX9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="tI3-Yi-hcn" customClass="PhotoCollectionViewCell" customModule="AsalTask" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="tI3-Yi-hcn" customClass="PhotoCollectionViewCell">
                                         <rect key="frame" x="0.0" y="50" width="150" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -60,13 +60,13 @@
                                         </constraints>
                                         <size key="customSize" width="150" height="170"/>
                                         <connections>
-                                            <outlet property="photoTitleLabel" destination="cDd-QR-FkU" id="GNc-1A-JY6"/>
-                                            <outlet property="thumbImageView" destination="CIf-Bm-5TS" id="WfE-pt-b3m"/>
-                                            <segue destination="m7H-Tv-ngO" kind="show" id="fft-Ud-3HY"/>
+                                            <outlet property="photoTitleLabel" destination="cDd-QR-FkU" id="wnx-W6-jJb"/>
+                                            <outlet property="thumbImageView" destination="CIf-Bm-5TS" id="zIy-bR-9p2"/>
+                                            <segue destination="m7H-Tv-ngO" kind="show" identifier="ShowFullPhoto" id="fft-Ud-3HY"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SectionHeader" id="fyS-b9-4XG" customClass="SectionHeaderCollectionReusableView" customModule="AsalTask" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SectionHeader" id="fyS-b9-4XG" customClass="SectionHeaderCollectionReusableView">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -84,12 +84,12 @@
                                         <constraint firstItem="kup-1f-bXZ" firstAttribute="top" secondItem="fyS-b9-4XG" secondAttribute="top" constant="8" id="s6K-X9-7UB"/>
                                     </constraints>
                                     <connections>
-                                        <outlet property="headerLabel" destination="kup-1f-bXZ" id="sWo-1w-hMG"/>
+                                        <outlet property="headerLabel" destination="kup-1f-bXZ" id="fWA-om-bD4"/>
                                     </connections>
                                 </collectionReusableView>
                                 <connections>
-                                    <outlet property="dataSource" destination="SYw-yl-CDs" id="urw-SW-OLb"/>
-                                    <outlet property="delegate" destination="SYw-yl-CDs" id="xCK-YI-wC3"/>
+                                    <outlet property="dataSource" destination="SYw-yl-CDs" id="f0b-zC-KHq"/>
+                                    <outlet property="delegate" destination="tsO-lo-XX9" id="O0t-Qt-1l1"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -104,7 +104,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Photos" id="tYT-NL-mFT"/>
                     <connections>
-                        <outlet property="collectionView" destination="gc9-6a-UDQ" id="WLi-ay-H82"/>
+                        <outlet property="collectionView" destination="gc9-6a-UDQ" id="pmU-i5-KcY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4r8-f3-OW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -114,7 +114,7 @@
         <!--Full Photo View Controller-->
         <scene sceneID="qvu-49-VoU">
             <objects>
-                <viewController id="m7H-Tv-ngO" customClass="FullPhotoViewController" customModule="AsalTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m7H-Tv-ngO" customClass="FullPhotoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pfA-cK-SYM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,7 +133,7 @@
                         <viewLayoutGuide key="safeArea" id="ktI-RY-oHS"/>
                     </view>
                     <connections>
-                        <outlet property="photoImageView" destination="NBb-hH-VBl" id="aHD-Wf-wyH"/>
+                        <outlet property="photoImageView" destination="NBb-hH-VBl" id="9kc-5s-mUD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mQm-IQ-z0a" userLabel="First Responder" sceneMemberID="firstResponder"/>

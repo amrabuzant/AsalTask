@@ -29,10 +29,12 @@
     __weak __typeof__(self) weakSelf = self;
 
     [APIMethods getUsersWithCompletion:^(NSArray<User *> *data, NSString *error ) {
-        weakSelf.dataSource = data;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [[weakSelf tableView] reloadData];
-        });
+        if ([error  isEqual: @"0"]) {
+            weakSelf.dataSource = data;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[weakSelf tableView] reloadData];
+            });
+        }
     }];
 }
 
@@ -54,7 +56,6 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-
     
     if ([segue.identifier isEqualToString:@"ShowUserDetails"]) {
         UserDetailsViewController *vc = segue.destinationViewController;
@@ -63,13 +64,6 @@
         NSArray *filteredArray = [dataSource filteredArrayUsingPredicate:predicate];
         vc.userInfo = filteredArray.firstObject;
     }
-//    if let destinationVC = segue.destination as? SwiftUserDetailsViewController{
-//        if let cell = sender as? UITableViewCell{
-//            destinationVC.userInfo = dataSource.first(where: { (item) -> Bool in
-//                item.name == cell.textLabel?.text
-//            })
-//        }
-//    }
 }
 
 @end
